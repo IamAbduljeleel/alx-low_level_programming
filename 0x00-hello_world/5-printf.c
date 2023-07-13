@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - the function of the integer
+ * main - this prints the desired text
  *
  * Return: value 0 is printed if successful
  */
