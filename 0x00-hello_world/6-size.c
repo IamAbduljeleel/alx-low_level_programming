@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - this prints the sizeof function
+ * main - this prints the size of integers
  *
  * Return: the value 0 on success
  */
