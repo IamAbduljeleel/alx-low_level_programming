@@ -1,1 +1,1 @@
-Using Malloc and free commands
+malloc and free
