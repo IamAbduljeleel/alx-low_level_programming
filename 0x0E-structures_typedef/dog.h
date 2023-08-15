@@ -10,6 +10,11 @@
  *
  * Desc: Poppy struct
  */
+/**
+ * dog_t - New name for struct dog
+ */
+
+typedef struct dog dog_t;
 
 struct dog
 {
