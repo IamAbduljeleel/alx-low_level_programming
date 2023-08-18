@@ -8,8 +8,8 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	size_t i;
-	size_t sum = 0;
+	unsigned int i;
+	unsigned int sum = 0;
 
 	va_list holder;
 
@@ -23,7 +23,7 @@ int sum_them_all(const unsigned int n, ...)
 
 		else
 		{
-			sum += va_arg(holder, const size_t);
+			sum += va_arg(holder, const unsigned int);
 		}
 	}
 	va_end(holder);
