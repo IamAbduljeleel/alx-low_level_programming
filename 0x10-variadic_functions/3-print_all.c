@@ -9,11 +9,11 @@
 
 void print_all(const char * const format, ...)
 {
-	int i, view_stat;
+	int i, view_stat; /* Declare variables and va_arg datatypes*/
 	char *str;
 	va_list spec;
 
-	va_start(spec, format);
+	va_start(spec, format); /*initialization of var arguments*/
 	i = 0;
 	while (format != NULL && format[i] != '\0')
 	{
@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 		{
 			case 'i':
 				printf("%d", va_arg(spec, int));
-				view_stat = 0;
+				view_stat = 0; /* Chect if condition as been met */
 				break;
 			case 'f':
 				printf("%f", va_arg(spec, double));
@@ -41,10 +41,10 @@ void print_all(const char * const format, ...)
 				view_stat = 1;
 				break;
 		}
-		if (format[i + 1] != '\0' && view_stat == 0)
+		if (format[i + 1] != '\0' && view_stat == 0) /* If not NULL */
 			printf(", ");
-		i++;
+		i++; /* Update step of iter var */
 	}
 	printf("\n");
-	va_end(spec);
+	va_end(spec); /* end traversal */
 }
