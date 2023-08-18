@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 		{
 			case 'i':
 				printf("%d", va_arg(spec, int));
-				view_stat = 0; /* Chect if condition as been met */
+				view_stat = 0; /* Check if condition has been met */
 				break;
 			case 'f':
 				printf("%f", va_arg(spec, double));
@@ -36,6 +36,7 @@ void print_all(const char * const format, ...)
 				if (str == NULL)
 					str = "(nil)";
 				printf("%s", str);
+				view_stat = 0;
 				break;
 			default:
 				view_stat = 1;
