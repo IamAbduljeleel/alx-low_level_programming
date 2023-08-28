@@ -1,11 +1,9 @@
 #include "lists.h"
-
 /**
  * print_list - Prints all the elements in a singly linked list
  * @h: The pointer to the singly linked list head
  * Return: The number of nodes
  */
-
 size_t print_list(const list_t *h)
 {
 	int j;
