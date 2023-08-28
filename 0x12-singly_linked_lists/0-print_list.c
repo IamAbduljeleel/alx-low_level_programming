@@ -9,7 +9,7 @@
 size_t print_list(const list_t *h)
 {
 	int my_nodes;
-	
+
 	if (h == NULL)
 		return (0);
 	for (my_nodes = 1; h->next != NULL; my_nodes++)
@@ -18,7 +18,7 @@ size_t print_list(const list_t *h)
 			printf("[%u] %s\n", h->len, "(nil)");
 		else
 			printf("[%u] %s\n", h->len, h->str);
-		h=h->next;
+		h = h->next;
 	}
 	printf("[%u] %s\n", h->len, h->str);
 	return (my_nodes);
