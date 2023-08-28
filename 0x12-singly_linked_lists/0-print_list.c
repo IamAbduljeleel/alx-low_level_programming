@@ -2,17 +2,17 @@
 
 /**
  * print_list - function that prints all the elements of a list_t list
- * @h: The Singly linked list
+ * @h: The pointer to the singly linked list head
  * Return: The number of nodes
  */
 
 size_t print_list(const list_t *h)
 {
-	int my_nodes;
+	int n;
 
 	if (h == NULL)
 		return (0);
-	for (my_nodes = 1; h->next != NULL; my_nodes++)
+	for (n = 1; h->next != NULL; n++)
 	{
 		if (h->str == NULL)
 			printf("[%u] %s\n", h->len, "(nil)");
@@ -21,5 +21,5 @@ size_t print_list(const list_t *h)
 		h = h->next;
 	}
 	printf("[%u] %s\n", h->len, h->str);
-	return (my_nodes);
+	return (n);
 }
