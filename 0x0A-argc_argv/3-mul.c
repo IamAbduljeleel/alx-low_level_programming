@@ -4,7 +4,7 @@
 /**
  * main - Multiplies two numbers
  * @argc: Number of command line arguments
- * @argv:The array that contains the command line arguments
+ * @argv: The array that contains the command line arguments
  * Return: (0) when successful
  */
 
