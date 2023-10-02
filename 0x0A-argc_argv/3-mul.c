@@ -4,8 +4,8 @@
 /**
  * main - Multiplies two numbers
  * @argc: Number of command line arguments
- * @argv: Array that contains the command line arguments
- * Return: (0) when Successful
+ * @argv:The array that contains the command line arguments
+ * Return: (0) when successful
  */
 
 int main(int argc, char *argv[])
